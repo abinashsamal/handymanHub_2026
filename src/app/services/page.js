@@ -1,6 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "Our Services | Plumbing, Electrical, Carpentry & More",
+  description:
+    "Handyman services in London: plumbing, electrical, furniture assembly, painting & drywall, carpentry, home maintenance, lighting, bathroom renovations, flooring. Transparent pricing.",
+  openGraph: { title: "Handyman Services in London, ON", url: "/services" },
+};
+
 const ServiceCard = ({ icon, title, description, services }) => (
   <div className="bg-white rounded-lg shadow-lg p-8">
     <div className="flex items-center mb-4">

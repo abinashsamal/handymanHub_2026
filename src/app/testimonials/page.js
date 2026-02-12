@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Testimonials | Client Reviews",
+  description: "See what our clients say about London Handyman Hub. Reviews and feedback from customers in London and area.",
+  openGraph: { title: "Testimonials | London Handyman Hub", url: "/testimonials" },
+};
+
 export default function Testimonials() {
   return (
     <main className="container mx-auto px-4 py-8">
@@ -5,4 +11,4 @@ export default function Testimonials() {
       <p>See what our clients say about us.</p>
     </main>
   );
-} 
+}

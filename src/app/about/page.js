@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "About Us | Quality Handyman Services in London",
+  description:
+    "Learn about London Handyman Hub. Quality work, fair prices, and reliable service for London and surrounding areas. Experienced, insured, and committed to your satisfaction.",
+  openGraph: { title: "About London Handyman Hub", url: "/about" },
+};
+
 export default function About() {
   const values = [
     {
@@ -63,12 +70,10 @@ export default function About() {
 
             <div className="space-y-4">
               <p className="text-gray-700">
-                Founded in 2010, London Handyman Hub began with a simple mission: to provide reliable, high-quality handyman services to homeowners and businesses throughout London.
+                Founded in 2017, London Handyman Hub began with a simple mission: to provide reliable, high-quality handyman services to homeowners and businesses throughout London.
               </p>
 
-              <p className="text-gray-700">
-                Our founder, Michael Johnson, having worked in the construction and home repair industry for over 15 years, noticed a gap in the market for dependable handyman services that customers could trust.
-              </p>
+             
 
               <p className="text-gray-700">
                 What started as a one-man operation has grown into a team of dedicated professionals, each bringing specialized skills to cover all aspects of home repair and maintenance.
@@ -77,6 +82,17 @@ export default function About() {
               <p className="text-gray-700">
                 Today, we pride ourselves on our reputation for excellence, attention to detail, and our commitment to customer satisfaction. We've helped thousands of London residents solve their home repair challenges and beautify their living spaces.
               </p>
+
+
+              <p className="text-gray-700">
+              London-Handyman-Hub Services is your trusted solution for reliable, high-quality home repair and maintenance. Serving both homeowners and businesses, our experienced team delivers expert craftsmanship across a wide range of services—including plumbing, electrical work, painting, carpentry, and general repairs. We are located in London Ontario.
+              </p>
+
+              <p className="text-gray-700">
+              We pride ourselves on attention to detail, prompt response times, and transparent pricing, ensuring every project is completed to the highest standards. Whether it's a small fix or a larger renovation, you can count on us for dependable, professional service that puts your needs first.
+              </p>
+
+
             </div>
           </div>
 
@@ -89,7 +105,7 @@ export default function About() {
               className="rounded-lg shadow-lg"
             />
             <div className="absolute -bottom-6 -right-6 bg-[#e53935] text-white p-6 rounded-lg shadow-lg">
-              <div className="text-3xl font-bold">2010</div>
+              <div className="text-3xl font-bold">2017</div>
               <div className="text-sm">Established</div>
             </div>
           </div>
