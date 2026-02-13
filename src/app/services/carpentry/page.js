@@ -149,6 +149,14 @@ export default function CarpentryServicesPage() {
                 <Link href="/quote" className="bg-[#1a237e] text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-900">
                   Get a free quote
                 </Link>
+                <a
+                  href="https://calendar.app.google/kiRFHo8EPAMyrvxk8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-[#1D3557] px-6 py-3 rounded-md font-semibold hover:bg-gray-100 border border-[#1D3557]"
+                >
+                  Book Appointment
+                </a>
               </div>
             </section>
           </div>

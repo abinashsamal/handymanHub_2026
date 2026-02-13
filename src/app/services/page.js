@@ -413,13 +413,21 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 flex justify-center gap-4 flex-wrap">
           <Link 
             href="/quote" 
             className="bg-[#e53935] text-white px-8 py-3 rounded-md hover:bg-red-700 inline-block text-lg"
           >
             Get a Free Quote
           </Link>
+          <a
+            href="https://calendar.app.google/kiRFHo8EPAMyrvxk8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-[#1D3557] px-8 py-3 rounded-md hover:bg-gray-100 inline-block text-lg border border-[#1D3557]"
+          >
+            Book Appointment
+          </a>
         </div>
       </div>
 
@@ -469,6 +477,14 @@ export default function Services() {
           >
             Get a Free Quote
           </Link>
+          <a
+            href="https://calendar.app.google/kiRFHo8EPAMyrvxk8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-[#1D3557] px-8 py-3 rounded-md hover:bg-gray-100 inline-block text-lg font-semibold border border-[#1D3557]"
+          >
+            Book Appointment
+          </a>
         </div>
       </div>
     </div>

@@ -19,13 +19,21 @@ const MainContent = () => {
               Quality repairs, installations, and maintenance for your home or business. 
               Fast, reliable, and affordable.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <Link 
                 href="/quote" 
                 className="bg-[#e53935] text-white px-8 py-3 rounded-md hover:bg-red-700 inline-block text-lg"
               >
                 Get a Free Quote
               </Link>
+              <a
+                href="https://calendar.app.google/kiRFHo8EPAMyrvxk8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#1D3557] px-8 py-3 rounded-md hover:bg-gray-100 inline-block text-lg border border-[#1D3557]"
+              >
+                Book Appointment
+              </a>
               <Link 
                 href="/services" 
                 className="bg-white text-[#1D3557] px-8 py-3 rounded-md hover:bg-gray-100 inline-block text-lg"

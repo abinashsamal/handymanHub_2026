@@ -58,6 +58,7 @@ const Header = () => {
             <li><Link href="/faq" className="hover:text-gray-900">FAQ</Link></li>
             <li><Link href="/contact" className="hover:text-gray-900">Contact</Link></li>
             <li><Link href="/quote" className="bg-[#e53935] text-white px-4 py-2 rounded-md hover:bg-red-700">Get a Quote</Link></li>
+            <li><a href="https://calendar.app.google/kiRFHo8EPAMyrvxk8" target="_blank" rel="noopener noreferrer" className="bg-white text-[#1D3557] px-4 py-2 rounded-md hover:bg-gray-100 border border-[#1D3557]">Book Appointment</a></li>
           </ul>
         </div>
 
@@ -77,6 +78,7 @@ const Header = () => {
           <li><Link href="/faq" className="block hover:text-gray-900 py-2">FAQ</Link></li>
           <li><Link href="/contact" className="block hover:text-gray-900 py-2">Contact</Link></li>
           <li><Link href="/quote" className="block bg-[#e53935] text-white px-4 py-2 rounded-md hover:bg-red-700 mt-2">Get a Quote</Link></li>
+          <li><a href="https://calendar.app.google/kiRFHo8EPAMyrvxk8" target="_blank" rel="noopener noreferrer" className="block bg-white text-[#1D3557] px-4 py-2 rounded-md hover:bg-gray-100 border border-[#1D3557] mt-2">Book Appointment</a></li>
         </ul>
       </nav>
     </header>
