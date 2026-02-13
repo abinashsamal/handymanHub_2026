@@ -234,6 +234,24 @@ export default function Services() {
         "Floor leveling",
         "Subfloor repair"
       ]
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm3 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H7a1 1 0 01-1-1V8zm7-3a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1V8a1 1 0 00-1-1h-6z" clipRule="evenodd"/>
+        </svg>
+      ),
+      title: "Other services",
+      description: "Odd jobs, small repairs, and general handyman work. Get in touch and we'll help with your project.",
+      href: "/services/other-services",
+      services: [
+        "Odd jobs and small repairs",
+        "Picture and mirror hanging",
+        "Drywall patches and repairs",
+        "General handyman tasks",
+        "Custom projects and requests",
+        "Don't see what you need? Ask us"
+      ]
     }
   ];
 

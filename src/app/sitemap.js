@@ -13,6 +13,7 @@ const routes = [
   { path: "/services/lighting", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services/bathroom-renovations", priority: 0.8, changeFrequency: "monthly" },
   { path: "/services/flooring", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/services/other-services", priority: 0.8, changeFrequency: "monthly" },
   { path: "/gallery", priority: 0.7, changeFrequency: "monthly" },
   { path: "/testimonials", priority: 0.7, changeFrequency: "weekly" },
   { path: "/faq", priority: 0.8, changeFrequency: "monthly" },
