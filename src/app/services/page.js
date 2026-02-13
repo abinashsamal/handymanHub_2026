@@ -1,11 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "Our Services | Plumbing, Electrical, Carpentry & More",
   description:
     "Handyman services in London: plumbing, electrical, furniture assembly, painting & drywall, carpentry, home maintenance, lighting, bathroom renovations, flooring. Transparent pricing.",
   openGraph: { title: "Handyman Services in London, ON", url: "/services" },
+  alternates: {
+    canonical: `${siteUrl}/services`,
+  },
 };
 
 const ServiceCard = ({ icon, title, description, services, href }) => {

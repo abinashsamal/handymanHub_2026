@@ -1,7 +1,12 @@
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "Testimonials | Client Reviews",
   description: "See what our clients say about London Handyman Hub. Reviews and feedback from customers in London and area.",
   openGraph: { title: "Testimonials | London Handyman Hub", url: "/testimonials" },
+  alternates: {
+    canonical: `${siteUrl}/testimonials`,
+  },
 };
 
 export default function Testimonials() {

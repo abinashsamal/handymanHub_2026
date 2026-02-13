@@ -2,11 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "Carpentry Services | Cabinets, Shelving, Doors, Trim, Decks, Stairs | London, ON",
   description:
     "Carpentry in London and area: cabinet installation and repair, custom shelving, door installation, trim and molding, deck and fence repairs, staircase and wood floor repairs. Free quotes.",
   openGraph: { title: "Carpentry Services | London Handyman Hub", url: "/services/carpentry" },
+  alternates: {
+    canonical: `${siteUrl}/services/carpentry`,
+  },
 };
 
 const carpentryServices = [
@@ -40,8 +45,39 @@ const relatedServices = [
 ];
 
 export default function CarpentryServicesPage() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+  
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": siteUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": `${siteUrl}/services`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Carpentry Services",
+        "item": `${siteUrl}/services/carpentry`
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <div className="relative bg-[#1D3557] text-white py-16">
         <div className="container mx-auto px-4">

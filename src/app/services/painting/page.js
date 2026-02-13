@@ -2,11 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "Interior & Exterior Painting Services | London, ON",
   description:
     "Professional painting and drywall services in London and area. Interior and exterior painting, drywall repair, texture, wallpaper removal. Quality paints, free quotes.",
   openGraph: { title: "Painting & Drywall Services | London Handyman Hub", url: "/services/painting" },
+  alternates: {
+    canonical: `${siteUrl}/services/painting`,
+  },
 };
 
 const benefits = [
@@ -35,8 +40,39 @@ const relatedServices = [
 ];
 
 export default function PaintingServices() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+  
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": siteUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": `${siteUrl}/services`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Painting & Drywall",
+        "item": `${siteUrl}/services/painting`
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero */}
       <div className="relative bg-[#1D3557] text-white py-16">
         <div className="container mx-auto px-4">

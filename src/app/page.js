@@ -1,5 +1,7 @@
 import MainContent from '../components/MainContent';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "Professional Handyman Services in London, ON | Free Quotes",
   description:
@@ -8,6 +10,9 @@ export const metadata = {
     title: "Professional Handyman Services in London, ON",
     description: "Quality repairs, installations, and maintenance. Free quotes. Serving London, St. Thomas, Tillsonburg & more.",
     url: "/",
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 

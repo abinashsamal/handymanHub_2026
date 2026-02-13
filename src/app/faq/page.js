@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
@@ -40,7 +40,8 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
-  const faqs = [
+  // Flatten all FAQs for schema markup
+  const allFaqs = [
     {
       title: "Services & Pricing",
       questions: [
@@ -135,6 +136,46 @@ export default function FAQ() {
     }
   ];
 
+  // Flatten FAQs for schema
+  const flattenedFaqs = allFaqs.flatMap(section => section.questions);
+
+  // FAQ Schema for SEO
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": flattenedFaqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    };
+
+    // Remove existing FAQ schema if present
+    const existingScript = document.querySelector('script[data-faq-schema]');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Add FAQ schema script
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-faq-schema', 'true');
+    script.text = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+
+    // Cleanup on unmount
+    return () => {
+      const scriptToRemove = document.querySelector('script[data-faq-schema]');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -156,7 +197,7 @@ export default function FAQ() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          {faqs.map((section, sectionIndex) => (
+          {allFaqs.map((section, sectionIndex) => (
             <div key={sectionIndex} className="mb-12">
               <h3 className="text-2xl font-bold text-[#1D3557] mb-6">{section.title}</h3>
               <div className="space-y-2">

@@ -1,0 +1,28 @@
+# robots.txt for London Handyman Hub
+# https://londonhandymanhub.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow Next.js internal routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_nextjs/
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+
+# Allow all service pages
+Allow: /services/
+Allow: /about
+Allow: /contact
+Allow: /quote
+Allow: /gallery
+Allow: /testimonials
+Allow: /faq
+
+# Sitemap location
+Sitemap: https://londonhandymanhub.com/sitemap.xml
+
+# Crawl-delay (optional - remove if not needed)
+# Crawl-delay: 1

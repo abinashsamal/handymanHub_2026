@@ -1,9 +1,14 @@
 import Image from 'next/image';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "Gallery | Our Handyman Work & Projects",
   description: "View our portfolio of handyman projects and past work in London and area.",
   openGraph: { title: "Gallery | London Handyman Hub", url: "/gallery" },
+  alternates: {
+    canonical: `${siteUrl}/gallery`,
+  },
 };
 
 // Add your image filenames here (they should be in public/gallery/)

@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://londonhandymanhub.com";
+
 export const metadata = {
   title: "About Us | Quality Handyman Services in London",
   description:
     "Learn about London Handyman Hub. Quality work, fair prices, and reliable service for London and surrounding areas. Experienced, insured, and committed to your satisfaction.",
   openGraph: { title: "About London Handyman Hub", url: "/about" },
+  alternates: {
+    canonical: `${siteUrl}/about`,
+  },
 };
 
 export default function About() {
