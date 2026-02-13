@@ -98,7 +98,7 @@ export default function About() {
 
           <div className="relative">
             <Image
-              src="/images/about-image.jpg"
+              src="/gallery/AboutUs.png"
               alt="Team workspace with laptops and office supplies"
               width={600}
               height={400}

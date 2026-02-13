@@ -37,6 +37,46 @@ const MainContent = () => {
         </div>
       </div>
 
+     {/* Top 3 Handyman Section */}
+     <div className="bg-gray-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+            <a
+              href="https://threebestrated.ca/handyman-in-london-on"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-[#e53935] focus:ring-offset-2 rounded-lg"
+              aria-label="View our listing on Three Best Rated"
+            >
+              <img
+                src="/three-best-rated-badge.png"
+                alt="Three Best Rated 2023 Award - Best Handyman in London - Top 3 Choices"
+                className="w-40 h-auto md:w-48"
+              />
+            </a>
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1D3557] mb-3">
+                We are among the top 3 Handyman Service providers in London
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Recognized by Three Best Rated® for our quality, reputation, and customer satisfaction. See our profile and reviews.
+              </p>
+              <a
+                href="https://threebestrated.ca/handyman-in-london-on"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-[#e53935] font-semibold hover:text-red-700"
+              >
+                View on Three Best Rated
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       {/* Feature Cards */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-8">
@@ -80,6 +120,8 @@ const MainContent = () => {
           </div>
         </div>
       </div>
+
+ 
 
       {/* Our Services Section */}
       <div className="text-center mb-12">
