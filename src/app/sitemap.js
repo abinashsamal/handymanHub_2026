@@ -13,6 +13,7 @@ const routes = [
   { path: "/services/lighting", priority: 0.8, changeFrequency: "monthly", lastModified: "2025-06-01" },
   { path: "/services/bathroom-renovations", priority: 0.8, changeFrequency: "monthly", lastModified: "2025-06-01" },
   { path: "/services/flooring", priority: 0.8, changeFrequency: "monthly", lastModified: "2025-06-01" },
+  { path: "/services/welding", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-06-20" },
   { path: "/services/other-services", priority: 0.8, changeFrequency: "monthly", lastModified: "2025-06-01" },
   { path: "/gallery", priority: 0.7, changeFrequency: "monthly", lastModified: "2026-02-01" },
   { path: "/testimonials", priority: 0.7, changeFrequency: "weekly", lastModified: "2026-02-01" },

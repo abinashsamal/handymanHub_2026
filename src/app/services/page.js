@@ -247,6 +247,24 @@ export default function Services() {
     {
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"/>
+        </svg>
+      ),
+      title: "Welding Services",
+      description: "Professional welding and metal fabrication for gates, fences, railings, structural repairs, and custom metalwork.",
+      href: "/services/welding",
+      services: [
+        "MIG and TIG welding",
+        "Structural steel repairs",
+        "Gate and fence welding",
+        "Railing and handrail fabrication",
+        "Custom metalwork and brackets",
+        "Mobile welding available"
+      ]
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm3 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H7a1 1 0 01-1-1V8zm7-3a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1V8a1 1 0 00-1-1h-6z" clipRule="evenodd"/>
         </svg>
       ),

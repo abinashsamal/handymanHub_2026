@@ -148,7 +148,7 @@ const MainContent = () => {
           </div>
           <h3 className="text-xl font-bold text-[#1D3557] mb-3">Plumbing Repairs</h3>
           <p className="text-gray-600 mb-4">From leaky faucets to pipe installations, we handle all your plumbing needs efficiently.</p>
-          <Link href="/services" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+          <Link href="/services/plumbing" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
@@ -165,7 +165,7 @@ const MainContent = () => {
           </div>
           <h3 className="text-xl font-bold text-[#1D3557] mb-3">Electrical Fixes</h3>
           <p className="text-gray-600 mb-4">Safe and reliable electrical repairs, installations and troubleshooting services.</p>
-          <Link href="/services" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+          <Link href="/services/electrical" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
@@ -182,7 +182,7 @@ const MainContent = () => {
           </div>
           <h3 className="text-xl font-bold text-[#1D3557] mb-3">Furniture Assembly</h3>
           <p className="text-gray-600 mb-4">Quick and professional assembly of all types of furniture for your home or office.</p>
-          <Link href="/services" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+          <Link href="/services/furniture" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
@@ -199,7 +199,7 @@ const MainContent = () => {
           </div>
           <h3 className="text-xl font-bold text-[#1D3557] mb-3">Painting & Drywall</h3>
           <p className="text-gray-600 mb-4">Transform your space with our expert painting and drywall repair services.</p>
-          <Link href="/services" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+          <Link href="/services/painting" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
@@ -216,7 +216,7 @@ const MainContent = () => {
           </div>
           <h3 className="text-xl font-bold text-[#1D3557] mb-3">Carpentry Work</h3>
           <p className="text-gray-600 mb-4">Custom carpentry solutions from shelving to custom built-ins and furniture repairs.</p>
-          <Link href="/services" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+          <Link href="/services/carpentry" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
@@ -233,7 +233,25 @@ const MainContent = () => {
           </div>
           <h3 className="text-xl font-bold text-[#1D3557] mb-3">Home Maintenance</h3>
           <p className="text-gray-600 mb-4">Regular maintenance services to keep your home in perfect working condition.</p>
-          <Link href="/services" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+          <Link href="/services/home-maintenance" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
+            Learn More
+            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
+            </svg>
+          </Link>
+        </div>
+
+        {/* Welding Services */}
+        <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+          <div className="text-[#e53935] mb-4">
+            <svg className="w-12 h-12 mx-auto" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-bold text-[#1D3557] mb-3">Welding Services</h3>
+          <p className="text-gray-600 mb-4">Professional welding and metal fabrication for gates, fences, railings, structural repairs, and custom metalwork.</p>
+          <Link href="/services/welding" className="text-[#e53935] hover:text-red-700 font-semibold inline-flex items-center">
             Learn More
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
