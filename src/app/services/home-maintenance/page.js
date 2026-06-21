@@ -8,7 +8,7 @@ export const metadata = {
   title: "Home Maintenance | Gutter Cleaning, Windows, Pressure Washing, Seasonal Packages | London, ON",
   description:
     "Home maintenance in London and area: gutter cleaning, window repairs, pressure washing, weather stripping, lock replacement, smoke detector installation, seasonal maintenance packages. Free quotes.",
-  openGraph: { title: "Home Maintenance | London Handyman Hub", url: "/services/home-maintenance" },
+  openGraph: { title: "Home Maintenance | London Handyman Hub", description: "Home maintenance in London, ON: gutter cleaning, window repairs, pressure washing, weather stripping, lock replacement, seasonal packages. Free quotes.", url: `${siteUrl}/services/home-maintenance` },
   alternates: {
     canonical: `${siteUrl}/services/home-maintenance`,
   },

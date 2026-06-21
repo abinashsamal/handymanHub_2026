@@ -8,7 +8,7 @@ export const metadata = {
   title: "Plumbing Repairs & Services | London, ON",
   description:
     "Professional plumbing repair services in London and area: leaky faucets, clogged drains, toilet repair, sink and shower installation. Fast, reliable handyman plumbing. Free quotes.",
-  openGraph: { title: "Plumbing Services | London Handyman Hub", url: "/services/plumbing" },
+  openGraph: { title: "Plumbing Services | London Handyman Hub", description: "Professional plumbing repair services in London, ON: leaky faucets, clogged drains, toilet repair, sink and shower installation. Free quotes.", url: `${siteUrl}/services/plumbing` },
   alternates: {
     canonical: `${siteUrl}/services/plumbing`,
   },
@@ -60,9 +60,9 @@ const whyChooseUs = [
 ];
 
 const relatedServices = [
-  { label: "Bathroom Renovations", path: "/services" },
-  { label: "Electrical Services", path: "/services" },
-  { label: "Home Maintenance", path: "/services" },
+  { label: "Bathroom Renovations", path: "/services/bathroom-renovations" },
+  { label: "Electrical Services", path: "/services/electrical" },
+  { label: "Home Maintenance", path: "/services/home-maintenance" },
   { label: "Contact / Quote", path: "/contact" },
 ];
 

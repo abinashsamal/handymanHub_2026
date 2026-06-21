@@ -8,7 +8,7 @@ export const metadata = {
   title: "Carpentry Services | Cabinets, Shelving, Doors, Trim, Decks, Stairs | London, ON",
   description:
     "Carpentry in London and area: cabinet installation and repair, custom shelving, door installation, trim and molding, deck and fence repairs, staircase and wood floor repairs. Free quotes.",
-  openGraph: { title: "Carpentry Services | London Handyman Hub", url: "/services/carpentry" },
+  openGraph: { title: "Carpentry Services | London Handyman Hub", description: "Carpentry in London, ON: cabinet installation, custom shelving, door installation, trim, deck repairs, staircase repairs, wood floor repairs. Free quotes.", url: `${siteUrl}/services/carpentry` },
   alternates: {
     canonical: `${siteUrl}/services/carpentry`,
   },

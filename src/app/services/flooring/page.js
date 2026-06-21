@@ -8,7 +8,7 @@ export const metadata = {
   title: "Flooring Services | Laminate, Vinyl, Hardwood Repair, Tile, Baseboard | London, ON",
   description:
     "Flooring in London and area: laminate and vinyl installation, hardwood and tile repair, baseboard installation, floor leveling, subfloor repair. Free quotes.",
-  openGraph: { title: "Flooring Services | London Handyman Hub", url: "/services/flooring" },
+  openGraph: { title: "Flooring Services | London Handyman Hub", description: "Flooring in London, ON: laminate, vinyl, hardwood repair, tile repair, baseboard installation, floor leveling and subfloor repair. Free quotes.", url: `${siteUrl}/services/flooring` },
   alternates: {
     canonical: `${siteUrl}/services/flooring`,
   },

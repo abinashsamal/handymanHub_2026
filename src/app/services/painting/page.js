@@ -8,7 +8,7 @@ export const metadata = {
   title: "Interior & Exterior Painting Services | London, ON",
   description:
     "Professional painting and drywall services in London and area. Interior and exterior painting, drywall repair, texture, wallpaper removal. Quality paints, free quotes.",
-  openGraph: { title: "Painting & Drywall Services | London Handyman Hub", url: "/services/painting" },
+  openGraph: { title: "Painting & Drywall Services | London Handyman Hub", description: "Interior and exterior painting, drywall repair and installation, wallpaper removal in London, ON. Quality paints, free quotes.", url: `${siteUrl}/services/painting` },
   alternates: {
     canonical: `${siteUrl}/services/painting`,
   },
@@ -34,8 +34,8 @@ const paintingServices = [
 
 const relatedServices = [
   { label: "Plumbing Services", path: "/services/plumbing" },
-  { label: "Electrical Services", path: "/services" },
-  { label: "Carpentry", path: "/services" },
+  { label: "Electrical Services", path: "/services/electrical" },
+  { label: "Carpentry", path: "/services/carpentry" },
   { label: "Contact / Quote", path: "/contact" },
 ];
 

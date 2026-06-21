@@ -8,7 +8,7 @@ export const metadata = {
   title: "Other Services | General Repairs, Assembly, Mounting, Plumbing, Electrical & More | London, ON",
   description:
     "Handyman other services in London and area: general repairs, flat-pack assembly, TV and picture hanging, doors and trim, drywall, painting, flooring, plumbing, electrical, appliances, exterior, and more. Free quotes.",
-  openGraph: { title: "Other Services | London Handyman Hub", url: "/services/other-services" },
+  openGraph: { title: "Other Services | London Handyman Hub", description: "General handyman repairs in London, ON: odd jobs, picture hanging, drywall patches, small repairs, and custom projects. Free quotes.", url: `${siteUrl}/services/other-services` },
   alternates: {
     canonical: `${siteUrl}/services/other-services`,
   },

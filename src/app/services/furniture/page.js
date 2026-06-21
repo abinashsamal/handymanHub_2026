@@ -8,7 +8,7 @@ export const metadata = {
   title: "Furniture Assembly | IKEA, Wayfair, Structube, Cabinets & Wardrobes | London, ON",
   description:
     "Furniture assembly in London and area: IKEA, Wayfair, Structube assembly, cabinet making, wardrobe installation, bed frames, shelving. Fast, professional. Free quotes.",
-  openGraph: { title: "Furniture Assembly | London Handyman Hub", url: "/services/furniture" },
+  openGraph: { title: "Furniture Assembly | London Handyman Hub", description: "Furniture assembly in London, ON: IKEA, Wayfair, Structube, bed frames, wardrobes, cabinets, shelving. Fast and professional. Free quotes.", url: `${siteUrl}/services/furniture` },
   alternates: {
     canonical: `${siteUrl}/services/furniture`,
   },

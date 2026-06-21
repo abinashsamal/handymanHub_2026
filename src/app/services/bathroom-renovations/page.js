@@ -8,7 +8,7 @@ export const metadata = {
   title: "Bathroom Renovations | Toilet, Shower, Vanity, Tile, Fixtures | London, ON",
   description:
     "Bathroom renovation in London and area: toilet replacement, shower installation, vanity installation, tile repair and installation, fixture upgrades, caulking, bathroom hardware. Free quotes.",
-  openGraph: { title: "Bathroom Renovations | London Handyman Hub", url: "/services/bathroom-renovations" },
+  openGraph: { title: "Bathroom Renovations | London Handyman Hub", description: "Bathroom renovations in London, ON: toilet replacement, shower installation, vanity, tile, fixture upgrades, caulking, and hardware. Free quotes.", url: `${siteUrl}/services/bathroom-renovations` },
   alternates: {
     canonical: `${siteUrl}/services/bathroom-renovations`,
   },

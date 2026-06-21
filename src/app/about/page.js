@@ -7,7 +7,11 @@ export const metadata = {
   title: "About Us | Quality Handyman Services in London",
   description:
     "Learn about London Handyman Hub. Quality work, fair prices, and reliable service for London and surrounding areas. Experienced, insured, and committed to your satisfaction.",
-  openGraph: { title: "About London Handyman Hub", url: "/about" },
+  openGraph: {
+    title: "About London Handyman Hub",
+    description: "Learn about London Handyman Hub — quality work, fair prices, and reliable service for London, ON and surrounding areas since 2017.",
+    url: `${siteUrl}/about`,
+  },
   alternates: {
     canonical: `${siteUrl}/about`,
   },
@@ -104,7 +108,7 @@ export default function About() {
           <div className="relative">
             <Image
               src="/gallery/AboutUs.png"
-              alt="Team workspace with laptops and office supplies"
+              alt="London Handyman Hub team – professional handyman services in London, Ontario"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"

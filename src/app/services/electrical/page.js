@@ -8,7 +8,7 @@ export const metadata = {
   title: "Electrical Services | Light Fixtures, Outlets, TV Mounting | London, ON",
   description:
     "Electrical services in London and area: light fixture and chandelier installation, new outlets, TV mounting, ceiling fans, switch replacement. Safe, reliable. Free quotes.",
-  openGraph: { title: "Electrical Services | London Handyman Hub", url: "/services/electrical" },
+  openGraph: { title: "Electrical Services | London Handyman Hub", description: "Electrical services in London, ON: light fixtures, chandeliers, outlets, TV mounting, ceiling fans, smart home devices. Safe and reliable. Free quotes.", url: `${siteUrl}/services/electrical` },
   alternates: {
     canonical: `${siteUrl}/services/electrical`,
   },
@@ -40,7 +40,7 @@ const whyChooseUs = [
 const relatedServices = [
   { label: "Plumbing Services", path: "/services/plumbing" },
   { label: "Painting & Drywall", path: "/services/painting" },
-  { label: "Home Maintenance", path: "/services" },
+  { label: "Home Maintenance", path: "/services/home-maintenance" },
   { label: "Contact / Quote", path: "/contact" },
 ];
 

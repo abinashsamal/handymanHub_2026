@@ -8,7 +8,7 @@ export const metadata = {
   title: "Lighting Installation | Chandeliers, Recessed, Track, Outdoor, Smart Lighting | London, ON",
   description:
     "Lighting installation in London and area: chandeliers, recessed lighting, under-cabinet, track lighting, outdoor lighting, motion sensor lights, smart lighting systems. Free quotes.",
-  openGraph: { title: "Lighting Installation | London Handyman Hub", url: "/services/lighting" },
+  openGraph: { title: "Lighting Installation | London Handyman Hub", description: "Lighting installation in London, ON: chandeliers, recessed lighting, track lighting, outdoor lighting, smart lighting systems. Free quotes.", url: `${siteUrl}/services/lighting` },
   alternates: {
     canonical: `${siteUrl}/services/lighting`,
   },

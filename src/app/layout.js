@@ -49,12 +49,20 @@ export const metadata = {
     title: "London Handyman Hub | Professional Handyman Services in London, ON",
     description:
       "Quality handyman services in London and area. Plumbing, electrical, carpentry, painting, furniture assembly. Free quotes.",
-    images: [],
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "London Handyman Hub – Professional Handyman Services in London, ON",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "London Handyman Hub | Handyman Services London, ON",
     description: "Quality handyman services in London and area. Free quotes.",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -74,8 +82,20 @@ const localBusinessJsonLd = {
   description:
     "Professional handyman services in London and area: plumbing, electrical, carpentry, painting, furniture assembly, and home maintenance.",
   url: siteUrl,
+  image: `${siteUrl}/og-image.jpg`,
   telephone: "+1-416-561-4736",
   email: "LondonHandymanHub@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "London",
+    addressRegion: "ON",
+    addressCountry: "CA",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 42.9849,
+    longitude: -81.2453,
+  },
   areaServed: [
     "London, ON",
     "St. Thomas",
@@ -107,7 +127,7 @@ const localBusinessJsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-CA" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
